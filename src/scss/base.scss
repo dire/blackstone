@@ -131,6 +131,14 @@ h1 {
     }
   }
 
+  .d20 {
+    &.float {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+
   .roll-result-actions {
     width: auto;
   }

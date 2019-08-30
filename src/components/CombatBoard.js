@@ -11,13 +11,28 @@ export default class CombatBoard extends Component {
     this.enemyData = EnemyData
     this.state = { 
       roll: 1,
-      selectedEnemies: []
+      selectedEnemies: [],
+      floatd20: false
     }
     this.selectAllEnemies = this.selectAllEnemies.bind(this)
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.selectAllEnemies()
+    window.addEventListener('scroll', this.floatDie)
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.floatDie)
+  }
+
+  floatDie = () => {
+    if (window.scrollY > 300) {
+      this.setState({ floatd20: true })
+    }
+    else {
+      this.setState({ floatd20: false })
+    }
   }
 
   selectAllEnemies() {
@@ -65,10 +80,13 @@ export default class CombatBoard extends Component {
   }
 
   render() {
+    const classFloat = this.state.floatd20 ? 'float' : '';
     return (
       <div className="combat-board">
         <h3>Roll the Blackstone die</h3>
-        <button className="d20 hex" onClick={this.handleClick.bind(this)}><span>{this.state.roll}</span></button>
+        <div className="d20-wrapper">
+          <button className={`d20 hex ${classFloat}`} onClick={this.handleClick.bind(this)}><span>{this.state.roll}</span></button>
+        </div>
         <div className="filter-list">
           {this.filterList()}
         </div>

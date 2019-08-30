@@ -9,6 +9,5 @@ Flip no more! See all the behaviour tables in your screen! Heck! You can even ro
 - [ ] Add event table
 - [ ] Add simple description of behaviours
 - [ ] Add enemies from the expansions
-
-## Ideas
-- [ ] Move the D20 to float in bottom when scrolled in mobile
+- [x] Move the D20 to float in bottom when scrolled in mobile
+- [ ] Throttle the scrollhandler
