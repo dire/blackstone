@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Hold",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Sneak",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Advance",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Charge",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Aim",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  }
+  ,
+  {
+    "name": "Onslaught",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Fall Back",
+    "type": "basic",
+    "description": "",
+    "simple-description": "simple"
+  }  {
+    "name": "Fury",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Onslaught. Re-roll failed."
+  },
+  {
+    "name": "Overcharge",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Overcharged attack to closest and visible."
+  },
+  {
+    "name": "Rush",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Move to closest. Charge."
+  },
+  {
+    "name": "Alert",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Threat level +1. Onslaught. If threat level is 3, onslaught and re-roll failed."
+  },
+  {
+    "name": "Regenerate",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Remove wound. If can't, Disrupt instead."
+  },
+  {
+    "name": "Empower",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Place empowered marker until wounded. If can't, Disrupt."
+  },
+  {
+    "name": "Annihilate",
+    "type": "unique",
+    "description": "",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Disrupt",
+    "type": "unique",
+    "description": "Discard one unspent activation or destiny dice. If not available, one explorer suffers a wound.",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Pounce",
+    "type": "unique",
+    "description": "asdf",
+    "simple-description": "simple"
+  },
+  {
+    "name": "Rapid Fire",
+    "type": "unique",
+    "description": "",
+    "simple-description": "Onslaught. Re-roll failed."
+  }
+]

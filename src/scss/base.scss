@@ -1,0 +1,171 @@
+
+body {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: $color-blackstone-dark-blue;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $color-white;
+  padding: 1.5em 0;
+}
+
+.footer {
+  background: $color-blackstone-dark-blue;
+  color: gray;
+  padding: 1em 0;
+
+  .footer-content {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.version-number {
+  color: gray;
+  margin-top: 1em;
+}
+
+.app-body {
+  background-color: $color-dark-gray-blue;
+  height: 100%;
+  overflow: hidden;
+  color: $color-white;
+  padding-bottom: 100px;
+}
+
+.status-column {
+  float: left;
+}
+
+.roll-action {
+  padding: 10px;
+}
+
+.roll-value {
+  padding: 10px;
+}
+
+.box {
+  padding: 10px;
+  background-color: $color-light-gray-blue;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.blackstone-die {
+  height: 100px;
+  width: 100px;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em 0;
+
+  .btn {
+    margin: 5px;
+  }
+}
+
+.btn {
+  border: 2px solid $color-blackstone-dark-blue;
+  border-radius: 4px;
+  display: block;
+  width: auto;
+  padding: 10px 10px;
+  cursor: pointer;
+  background: transparent;
+  color: $color-white;
+  outline: 0;
+
+  &.selected, &:focus.selected {
+    background: $color-blackstone-purple;
+    color: $color-white;
+  }
+
+  &:hover {
+    background: rgb(51, 36, 50);
+  }
+}
+
+.combat-board {
+  margin-top: 2em;
+}
+
+.tiny {
+  font-size: $text-tiny;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    .footer-content {
+      max-width: 90%;
+    }
+  }
+
+  .roll-result-actions {
+    width: auto;
+  }
+
+  .enemy-table {
+    overflow: visible;
+    overflow-x: auto;
+    justify-content: normal;
+  }
+
+  .roll-value {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+
+  .roll-action {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+
+  .behaviour-tables {
+    justify-content: center;
+  
+    .enemy-behaviour-table {
+      width: 100%;
+    }
+  }
+}

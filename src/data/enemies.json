@@ -1,0 +1,451 @@
+[
+  {
+    "name": "Chaos Beastmen",
+    "move": 2,
+    "wound_value": 3,
+    "size": "Large",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Onslaught",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Fury",
+        "7": "Fury"
+      },
+      "Close":
+      {
+        "1": "Onslaught",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      },
+      "Other":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Fury": "Onslaught. Re-roll failed.",
+      "Rush": "Move towards closest explorer. Charge."
+    }]
+  },
+  {
+    "name": "Chaos Space Marine",
+    "move": 2,
+    "wound_value": 4,
+    "size": "Large",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Sneak",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Rush",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Onslaught",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Rapid Fire",
+        "7": "Rapid Fire"
+      },
+      "In Cover":
+      {
+        "1": "Aim",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Advance",
+        "6": "Rapid Fire",
+        "7": "Rapid Fire"
+      },
+      "Close":
+      {
+        "1": "Aim",
+        "2": "Aim",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Advance",
+        "6": "Rapid Fire",
+        "7": "Rapid Fire"
+      },
+      "Other":
+      {
+        "1": "Aim",
+        "2": "Aim",
+        "3": "Aim",
+        "4": "Advance",
+        "5": "Advance",
+        "6": "Rapid Fire",
+        "7": "Rapid Fire"
+      }
+    }],
+    "Unique actions": [{
+      "Rapid Fire": "Onslaught. Re-roll failed.",
+      "Rush": "Move towards closest explorer.Charge."
+    }]
+  },
+  {
+    "name": "Negavolt Cultists",
+    "move": 2,
+    "wound_value": 3,
+    "size": "Large",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Recharge",
+        "2": "Hold",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Recharge",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Fury"
+      },
+      "Other":
+      {
+        "1": "Recharge",
+        "2": "Charge",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Fury": "Onslaught. Re-roll failed.",
+      "Recharge": "Remove a wound counter from the Negavolt Cultist. If can't, Advance.",
+      "Rush": "Move towards closest explorer. Charge."
+    }]
+  },
+  {
+    "name": "Obsidius Mallex",
+    "move": 2,
+    "wound_value": 12,
+    "size": "Huge",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Sneak",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Charge",
+        "5": "Rush",
+        "6": "Rush",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Onslaught",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Fury",
+        "6": "Fury",
+        "7": "Fury"
+      },
+      "Close":
+      {
+        "1": "Onslaught",
+        "2": "Onslaught",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Overcharge",
+        "7": "Overcharge"
+      },
+      "In cover":
+      {
+        "1": "Charge",
+        "2": "Charge",
+        "3": "Aim",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Overcharge",
+        "7": "Rush"
+      },
+      "Other":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Aim",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Overcharge",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Fury": "Onslaught . Re-roll failed.",
+      "Overcharge": "Make an overcharged Plasma Pistol attack against the closest explorer in range and visible.",
+      "Rush": "Move towards closest explorer. Charge."
+    }]
+  },
+  {
+    "name": "Rogue Psyker",
+    "move": 2,
+    "wound_value": 2,
+    "size": "Large",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Hold",
+        "3": "Hold",
+        "4": "Disrupt",
+        "5": "Disrupt",
+        "6": "Regenerate",
+        "7": "Empower"
+      },
+      "Engaged":
+      {
+        "1": "Fall Back",
+        "2": "Fall Back",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Annihilate",
+        "7": "Annihilate"
+      },
+      "Close":
+      {
+        "1": "Hold",
+        "2": "Disrupt",
+        "3": "Disrupt",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Regenerate",
+        "7": "Empower"
+      },
+      "Other":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Aim",
+        "4": "Aim",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Annihilate": "Place the empowered marker beside the Rogue Psyker. Attack adjacent and visible explorer. Re-roll failed. The Rogue Psyker remains empowered until a wound or grievous wound.",
+      "Disrupt": "Discard activation or destiny dice. If can't, one explorer suffers a wound.",
+      "Empower": "Place the empowered marker beside the Rogue Psyker. If can't, Disrupt. Remains empowered until a wound or grievous wound.",
+      "Regenerate": "Remove a wound from the Rogue Psyker. If can't, Disrupt."
+    }]
+  },
+  {
+    "name": "Spindle Drone",
+    "move": 2,
+    "wound_value": 2,
+    "size": "Small",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Sneak",
+        "3": "Sneak",
+        "4": "Sneak",
+        "5": "Advance",
+        "6": "Advance",
+        "7": "Alert"
+      },
+      "Engaged":
+      {
+        "1": "Fall Back",
+        "2": "Fall Back",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Alert"
+      },
+      "In Cover":
+      {
+        "1": "Aim",
+        "2": "Aim",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Alert"
+      },
+      "Close":
+      {
+        "1": "Fall Back",
+        "2": "Aim",
+        "3": "Aim",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Alert"
+      },
+      "Other":
+      {
+        "1": "Fall Back",
+        "2": "Aim",
+        "3": "Aim",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Advance",
+        "7": "Alert"
+      }
+    }],
+    "Unique actions": [{
+      "Alert": "Increase the threat level by 1. Onslaught. If the threat level is 3, Onslaught and re-roll failed."
+    }]
+  },
+  {
+    "name": "Traitor Guardsman",
+    "move": 2,
+    "wound_value": 2,
+    "size": "Small",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Sneak",
+        "3": "Advance",
+        "4": "Advance",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Fall Back",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Fury"
+      },
+      "In cover":
+      {
+        "1": "Aim",
+        "2": "Aim",
+        "3": "Aim",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Fury"
+      },
+      "Close":
+      {
+        "1": "Fall Back",
+        "2": "Onslaught",
+        "3": "Onslaught",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Fury"
+      },
+      "Other":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Aim",
+        "4": "Aim",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Fury": "Onslaught. Re-roll failed.",
+      "Rush": "Move towards closest explorer. Charge."
+    }]
+  },
+  {
+    "name": "Ur-ghul",
+    "move": 3,
+    "wound_value": 3,
+    "size": "Small",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Sneak",
+        "3": "Sneak",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Rush"
+      },
+      "Engaged":
+      {
+        "1": "Fall Back",
+        "2": "Fall Back",
+        "3": "Onslaught",
+        "4": "Onslaught",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Pounce"
+      },
+      "Close":
+      {
+        "1": "Fall Back",
+        "2": "Fall Back",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Pounce"
+      },
+      "Other":
+      {
+        "1": "Fall Back",
+        "2": "Fall Back",
+        "3": "Fall Back",
+        "4": "Rush",
+        "5": "Rush",
+        "6": "Rush",
+        "7": "Rush"
+      }
+    }],
+    "Unique actions": [{
+      "Pounce": "Onslaught if adjacent and visible explorer. Otherwise Charge. Re-roll failed for both.",
+      "Rush": "Move towards closest explorer. Charge."
+    }]
+  }
+]

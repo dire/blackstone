@@ -1,0 +1,84 @@
+.behaviour-results {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .enemy-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+
+    span {
+      padding: 0 5px;
+      font-size: $text-tiny;
+    }
+  }
+
+  .enemy-table {
+    .roll-action {
+      &:nth-child(odd) {
+        background-color: $color-dark-gray-blue;
+      }
+
+      &.highlighted {
+        background-color: $color-highlight;
+      }
+    }
+  }
+
+  .roll-number-section {
+    .roll-value {
+      &:nth-child(even) {
+        background-color: $color-dark-gray-blue;
+      }
+    }
+  }
+
+  .roll-result-actions {
+    ul {
+      li {
+        padding: 5px 0;
+        border-bottom: 2px dotted $color-white;
+        width: 100%;
+        text-align: left;
+  
+        span:nth-child(2) {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.behaviour-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .enemy-behaviour-table {
+    clear: both;
+    margin: 20px 0;
+
+    .enemy-table {
+      display: flex;
+      justify-content: center;
+
+      .roll-number-section {
+        float: left;
+      }
+
+      .status-section {
+        display: flex;
+      }
+    }
+  }
+
+  .column-title {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      padding: 0.5em 0;
+    }
+
+    background: $color-blackstone-purple;
+  }
+}
