@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/blackstone/static/css/main.8f11a56b.chunk.css",
+    "main.js": "/blackstone/static/js/main.6df89071.chunk.js",
+    "main.js.map": "/blackstone/static/js/main.6df89071.chunk.js.map",
+    "runtime~main.js": "/blackstone/static/js/runtime~main.bb60794d.js",
+    "runtime~main.js.map": "/blackstone/static/js/runtime~main.bb60794d.js.map",
+    "static/js/2.a595af0e.chunk.js": "/blackstone/static/js/2.a595af0e.chunk.js",
+    "static/js/2.a595af0e.chunk.js.map": "/blackstone/static/js/2.a595af0e.chunk.js.map",
+    "index.html": "/blackstone/index.html",
+    "precache-manifest.de31efd6dc66cf5bcf9b7dcbfa99fc37.js": "/blackstone/precache-manifest.de31efd6dc66cf5bcf9b7dcbfa99fc37.js",
+    "service-worker.js": "/blackstone/service-worker.js",
+    "static/css/main.8f11a56b.chunk.css.map": "/blackstone/static/css/main.8f11a56b.chunk.css.map"
+  }
+}
