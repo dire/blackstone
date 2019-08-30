@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d91008fa1c15c05f586ceada8a70628f",
+    "revision": "308ce19aab0f584060536b250240efef",
     "url": "/blackstone/index.html"
   },
   {
-    "revision": "4131eb35767b425b6261",
-    "url": "/blackstone/static/css/main.b5c3a8a1.chunk.css"
+    "revision": "3f3df0680bfba092cdcc",
+    "url": "/blackstone/static/css/main.e00ce1d6.chunk.css"
   },
   {
     "revision": "c59b8b09234421e13ae3",
     "url": "/blackstone/static/js/2.a595af0e.chunk.js"
   },
   {
-    "revision": "4131eb35767b425b6261",
-    "url": "/blackstone/static/js/main.459e89df.chunk.js"
+    "revision": "3f3df0680bfba092cdcc",
+    "url": "/blackstone/static/js/main.7f9381af.chunk.js"
   },
   {
     "revision": "f62cb7b43bebfd436b24",
