@@ -1,0 +1,53 @@
+.d20 {
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  color: $color-white;
+  border-top: 0;
+  border-bottom: 0;
+  box-sizing: initial;
+
+  span {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+  }
+}
+
+.hex {
+  position: relative;
+  width: 99px; 
+  height: 57.16px;
+  background-color: #64C7CC;
+  margin: 40px 0;
+  border-left: solid 4px #ffffff;
+  border-right: solid 4px #ffffff;
+  border-radius: 2px;
+}
+
+.hex:before,
+.hex:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.00px;
+  height: 70.00px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.4982px;
+  border-radius: 2px;
+}
+
+.hex:before {
+  top: -38px;
+  border-top: solid 5.6569px #ffffff;
+  border-right: solid 5.6569px #ffffff;
+}
+
+.hex:after {
+  bottom: -37px;
+  border-bottom: solid 5.6569px #ffffff;
+  border-left: solid 5.6569px #ffffff;
+}

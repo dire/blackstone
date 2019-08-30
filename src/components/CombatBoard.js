@@ -65,12 +65,10 @@ export default class CombatBoard extends Component {
   }
 
   render() {
-    const dieNumber = (<span>Roll</span>)
     return (
       <div className="combat-board">
         <h3>Roll the Blackstone die</h3>
-        <button className="blackstone-die" onClick={this.handleClick.bind(this)}>{dieNumber}</button>
-        <div>You rolled: {this.state.roll}</div>
+        <button className="d20 hex" onClick={this.handleClick.bind(this)}><span>{this.state.roll}</span></button>
         <div className="filter-list">
           {this.filterList()}
         </div>
