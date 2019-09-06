@@ -447,5 +447,67 @@
       "Pounce": "Onslaught if adjacent and visible explorer. Otherwise Charge. Re-roll failed for both.",
       "Rush": "Move towards closest explorer. Charge."
     }]
+  },
+  {
+    "name": "Ambull",
+    "move": 3,
+    "wound_value": 16,
+    "size": "Huge",
+    "behaviours": [{
+      "Hidden":
+      {
+        "1": "Hold",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Advance",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Tunnel"
+      },
+      "Engaged":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Advance",
+        "4": "Advance",
+        "5": "Onslaught",
+        "6": "Onslaught",
+        "7": "Swipe"
+      },
+      "Close":
+      {
+        "1": "Advance",
+        "2": "Advance",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Tunnel"
+      },
+      "Protective":
+      {
+        "1": "Charge",
+        "2": "Charge",
+        "3": "Charge",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Tunnel"
+      },
+      "Other":
+      {
+        "1": "Hold",
+        "2": "Fall Back",
+        "3": "Fall Back",
+        "4": "Charge",
+        "5": "Charge",
+        "6": "Charge",
+        "7": "Tunnel"
+      }
+    }],
+    "Unique actions": [{
+      "Tunnel": "Remove the Ambull from the battlefield and place the Ambull location marker on the hex it was removed from - any remaining actions during this activation are lost. The next time the initiative card for the Ambull is reached, do not roll on the behaviour table for the Ambull's first action. Instead, the Ambull is placed in a hex as close as possible to the explorer that is closest to the Ambull location marker. Once the Ambull has been placed, remove the Ambull location marker and roll for the Ambull's second action as normal.",
+      "Swipe": "Make an attack against each explorer that is adjacent and visible to Ambull."
+    }]
   }
 ]

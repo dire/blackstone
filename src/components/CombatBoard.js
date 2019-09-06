@@ -83,7 +83,7 @@ export default class CombatBoard extends Component {
     const classFloat = this.state.floatd20 ? 'float' : '';
     return (
       <div className="combat-board">
-        <h3>Roll the Blackstone die</h3>
+        <h3>Click to roll the Blackstone die</h3>
         <div className="d20-wrapper">
           <button className={`d20 hex ${classFloat}`} onClick={this.handleClick.bind(this)}><span>{this.state.roll}</span></button>
         </div>

@@ -8,7 +8,7 @@ function App() {
       <header className="header">
         <h1>Blackstone Fortress Companion</h1>
         <span className="slogan">Unofficial App in the 41st Millenium</span>
-        <span className="version-number tiny">v0.1.0</span>
+        <span className="version-number tiny">v0.1.1</span>
       </header>
       <div className="app-body">
         <CombatBoard />
