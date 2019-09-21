@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Behaviours from './Behaviours'
-import FilterButton from './filter-button'
+import FilterButton from './FilterButton'
 import EnemyData from '../data/enemies.json'
 
 export default class CombatBoard extends Component {

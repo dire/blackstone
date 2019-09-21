@@ -23,6 +23,10 @@
       &.highlighted {
         background-color: $color-highlight;
       }
+
+      span {
+        cursor: pointer;
+      }
     }
   }
 

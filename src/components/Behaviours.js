@@ -1,12 +1,20 @@
 import React, {Component} from 'react'
 import EnemyData from '../data/enemies.json'
+import BehaviourData from '../data/enemy-actions.json'
+import Overlay from './Overlay'
 
 export default class Behaviours extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: EnemyData
+      items: EnemyData,
+      behaviourData: BehaviourData,
+      overlayToggled: false,
+      overlayText: '',
+      overlayActionIndex: ''
     }
+
+    this.closeBehaviourTooltip = this.closeBehaviourTooltip.bind(this)
   }
 
   rollColumn() {
@@ -85,6 +93,39 @@ export default class Behaviours extends Component {
     )
   }
 
+  toggleBehaviourTooltip(behaviour, enemy, actionIndex) {
+    let data = this.state.behaviourData
+    let behaviourInfo = data.find(item => item.name === behaviour)
+
+    if (actionIndex === this.state.overlayActionIndex) {
+      this.setState(state => ({
+        overlayToggled: false,
+        overlayActionIndex: '',
+        overlayText: ''
+      }))
+    }
+    else if (this.state.overlayText === behaviourInfo.simple_description) {
+      this.setState(state => ({
+        overlayActionIndex: actionIndex
+      }))
+    }
+    else {
+      this.setState(state => ({
+        overlayToggled: true,
+        overlayText: behaviourInfo.simple_description,
+        overlayActionIndex: actionIndex
+      }))
+    }
+  }
+
+  closeBehaviourTooltip() {
+    this.setState({
+      overlayToggled: false,
+      overlayText: '',
+      overlayActionIndex: ''
+    })
+  }
+
   behaviourTable(enemy, enemyIndex, roll, behaviourIndex) {
     return (
       <div key={`${enemy.name}${enemyIndex}`} className="enemy-behaviour-table">
@@ -100,8 +141,8 @@ export default class Behaviours extends Component {
                   <div className="status-column" key={`${statusIndex}`}>
                     <div className="column-title"><h4>{enemyStatus}</h4></div>
                     {Object.keys(enemy.behaviours[stateIndex][enemyStatus]).map((action, actionIndex) => (
-                      <div className={(behaviourIndex === actionIndex + 1) ? 'roll-action highlighted' : 'roll-action'} key={`${actionIndex}`}>
-                        {enemy.behaviours[stateIndex][enemyStatus][action]}
+                      <div className={(behaviourIndex === actionIndex + 1) ? 'roll-action highlighted' : 'roll-action'} key={`${enemy.name}${enemyStatus}${actionIndex}`}>
+                        <span onClick={(e) => this.toggleBehaviourTooltip(enemy.behaviours[stateIndex][enemyStatus][action], enemy, enemy.name + enemyStatus + actionIndex)}>{enemy.behaviours[stateIndex][enemyStatus][action]}</span>
                       </div>
                     ))}
                   </div>
@@ -117,6 +158,7 @@ export default class Behaviours extends Component {
   render() {
     return (
       <div>
+        <Overlay overlayToggled={this.state.overlayToggled} overlayText={this.state.overlayText} onClick={this.closeBehaviourTooltip}/>
         <div className="behaviour-results">
           {this.getBehaviourFromRoll(this.props.roll)}
         </div>
