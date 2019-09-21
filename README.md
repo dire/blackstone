@@ -7,7 +7,7 @@ Flip no more! See all the behaviour tables in your screen! Heck! You can even ro
 - [ ] Refactor stuff
 - [ ] Solve that CSS mess
 - [ ] Add event table
-- [ ] Add simple description of behaviours
+- [x] Add simple description of behaviours
 - [ ] Add enemies from the expansions
 - [x] Move the D20 to float in bottom when scrolled in mobile
 - [ ] Throttle the scrollhandler
