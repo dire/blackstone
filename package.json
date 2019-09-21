@@ -1,7 +1,7 @@
 {
   "name": "blackstone-fortress-companion",
   "homepage": "http://dire.github.io/blackstone",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "gulp": "^4.0.2",

@@ -112,5 +112,11 @@
     "type": "unique",
     "description": "",
     "simple_description": "Attack against each explorer adjacent and visible."
+  },
+  {
+    "name": "Recharge",
+    "type": "unique",
+    "description": "",
+    "simple_description": "Remove a wound counter from this unit. If none exists, Advance instead."
   }
 ]
