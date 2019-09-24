@@ -27,6 +27,10 @@
       span {
         cursor: pointer;
       }
+
+      &:hover {
+        background-color: $color-blackstone-purple;
+      }
     }
   }
 
