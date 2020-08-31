@@ -18,7 +18,6 @@ export default class CombatBoard extends Component {
   }
 
   componentDidMount() {
-    this.selectAllEnemies()
     window.addEventListener('scroll', this.floatDie)
   }
 
@@ -80,15 +79,18 @@ export default class CombatBoard extends Component {
   }
 
   render() {
-    const classFloat = this.state.floatd20 ? 'float' : '';
+    const classFloat = this.state.floatd20 ? 'float' : ''
     return (
       <div className="combat-board">
         <h3>Click to roll the Blackstone die</h3>
         <div className="d20-wrapper">
           <button className={`d20 hex ${classFloat}`} onClick={this.handleClick.bind(this)}><span>{this.state.roll}</span></button>
         </div>
-        <div className="filter-list">
-          {this.filterList()}
+        <div class="filters container">
+          <h3>Select enemies in the battle</h3>
+          <div className="filter-list">
+            {this.filterList()}
+          </div>
         </div>
         <Behaviours roll={this.state.roll} selectedEnemies={this.state.selectedEnemies} />
       </div>

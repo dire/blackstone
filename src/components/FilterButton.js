@@ -2,9 +2,9 @@ import React from 'react'
 
 class FilterButton extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      toggled: true
+      toggled: false
     }
   }
 
