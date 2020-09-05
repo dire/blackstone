@@ -58,4 +58,9 @@
 
 .hex:active {
   background-color: $color-highlight;
+  outline: 0;
+}
+
+.hex:focus {
+  outline: 0;
 }
